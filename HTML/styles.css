@@ -3,7 +3,6 @@
     --principal-Color: #3d7cb2;
 }
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -44,6 +43,7 @@
 .hiden-box.active {
     height: 140px;
     transition: 0.5s;
+    z-index: 1;
 }
 
 .list.hiden-class {
@@ -53,8 +53,6 @@
     list-style: none;
 
 }
-
-.parrafo.lista.hiden {}
 
 /*Cabezal principal*/
 #head {
@@ -71,7 +69,7 @@
     display: block;
     position: relative;
     width: 100%;
-    height: 40px;
+    height: 45px;
     background-color: black;
 }
 
