@@ -22,11 +22,13 @@
     font-weight: bold;
     font-size: 15px;
 }
-.enlaces{
+
+.enlaces {
     text-decoration: none;
 }
+
 /*Cajas ocultas dentro del menú*/
-.hiden-box{
+.hiden-box {
     background-color: var(--principal-Color);
     position: absolute;
     width: 150px;
@@ -35,20 +37,22 @@
     transition: 0.5s;
     overflow: hidden;
 }
-.hiden-box.active{
+
+.hiden-box.active {
     height: 140px;
     transition: 0.5s;
 }
-.list.hiden-class{
-    display:block;
+
+.list.hiden-class {
+    display: block;
     margin-top: 30px;
     margin-left: 20px;
     list-style: none;
-    
+
 }
-.parrafo.lista.hiden{
-    
-}
+
+.parrafo.lista.hiden {}
+
 /*Cabezal principal*/
 #head {
     position: relative;
@@ -117,6 +121,7 @@
     margin-right: 30px;
     cursor: pointer;
 }
+
 /*Eventos de hover*/
 
 /*Segundo cabezal*/
@@ -146,18 +151,19 @@
     top: 12px;
 }
 
+/*botton flotante*/
 .btn-flotante {
-    font-size: 16px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: bold;
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 50%;
     letter-spacing: 2px;
     background-color: #E91E63;
     padding: 18px 30px;
     position: fixed;
     bottom: 40px;
-    right: 40px;
+    right: 50px;
     transition: all 300ms ease 0ms;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     z-index: 99;
