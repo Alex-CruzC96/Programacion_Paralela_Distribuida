@@ -21,7 +21,33 @@
     font-weight: bold;
     font-size: 15px;
 }
-
+.enlaces{
+    text-decoration: none;
+}
+/*Cajas ocultas dentro del menú*/
+.hiden-box{
+    background-color: var(--principal-Color);
+    position: absolute;
+    width: 150px;
+    height: 0;
+    border-radius: 4%;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.hiden-box.active{
+    height: 140px;
+    transition: 0.5s;
+}
+.list.hiden-class{
+    display:block;
+    margin-top: 30px;
+    margin-left: 20px;
+    list-style: none;
+    
+}
+.parrafo.lista.hiden{
+    
+}
 /*Cabezal principal*/
 #head{
     position: relative;
@@ -81,6 +107,7 @@
     margin-right: 30px;
     cursor: pointer;
 }
+/*Eventos de hover*/
 
 /*Segundo cabezal*/
 #second-sub-head{
