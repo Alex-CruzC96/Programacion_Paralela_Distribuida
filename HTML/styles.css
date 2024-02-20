@@ -1,0 +1,43 @@
+/*Vriables de la paleta de color*/
+:root{
+    --principal-Color:blue;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*Clases*/
+
+
+/*Cabezal principal*/
+#head{
+    position: relative;
+    width: 100%; /*No se debe mover*/
+    height:120px;
+    border: solid 3px var(--principal-Color);
+}
+
+/*Contenido de contacto*/
+#sub-head{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+}
+
+/*Lista de elementos dentro del contenido de contacto (1)*/
+.list{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 2.5%;
+    padding: 0;
+}
+.list-item{
+    display: inline-block;
+    margin-right: 5px;
+    color: #ffffff;
+}
