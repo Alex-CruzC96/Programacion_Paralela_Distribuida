@@ -3,7 +3,6 @@
     --principal-Color: #3d7cb2;
 }
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -26,7 +25,10 @@
 .enlaces {
     text-decoration: none;
 }
-
+.videos{
+    display: block;
+    width: 100%;
+}
 /*Cajas ocultas dentro del menú*/
 .hiden-box {
     background-color: var(--principal-Color);
@@ -41,6 +43,7 @@
 .hiden-box.active {
     height: 140px;
     transition: 0.5s;
+    z-index: 1;
 }
 
 .list.hiden-class {
@@ -50,8 +53,6 @@
     list-style: none;
 
 }
-
-.parrafo.lista.hiden {}
 
 /*Cabezal principal*/
 #head {
@@ -68,7 +69,7 @@
     display: block;
     position: relative;
     width: 100%;
-    height: 40px;
+    height: 45px;
     background-color: black;
 }
 
@@ -178,9 +179,16 @@
 /*Main cuerpo*/
 #cuerpo{
     display: block;
-    background-color: red;
+    background-color: white;
     width: 100%;
     height: 100vh;
+}
+#upper-body{
+    display: block;
+    width: 100%;
+    height: 90%;
+    background-color: lightblue;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {
