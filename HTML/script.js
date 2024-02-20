@@ -27,3 +27,12 @@ varThree.addEventListener('mouseover',function(){
 varThree.addEventListener('mouseleave',function(){
     document.getElementById("hiden-box-three").classList.remove("active")
 });
+
+//submenu numero 4
+let varFour=document.getElementById("opcion4");
+varFour.addEventListener('mouseover', function(){
+    document.getElementById("hiden-box-four").classList.add("active")
+});
+varFour.addEventListener('mouseleave', function(){
+    document.getElementById("hiden-box-four").classList.remove("active")
+});
