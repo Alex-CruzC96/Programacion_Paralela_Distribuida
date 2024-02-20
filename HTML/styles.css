@@ -1,6 +1,6 @@
 /*Vriables de la paleta de color*/
 :root{
-    --principal-Color:blue;
+    --principal-Color:#3d7cb2;
 }
 
 
@@ -10,14 +10,23 @@
 }
 
 /*Clases*/
-
+.parrafo{
+    color: white;
+    font-family: 'Mukta';
+    font-size: small;
+}
+.parrafo.lista{
+    text-transform: uppercase;
+    font-family: 'Mukta';
+    font-weight: bold;
+    font-size: 15px;
+}
 
 /*Cabezal principal*/
 #head{
     position: relative;
     width: 100%; /*No se debe mover*/
     height:120px;
-    border: solid 3px var(--principal-Color);
 }
 
 /*Contenido de contacto*/
@@ -28,16 +37,68 @@
     height: 40px;
     background-color: black;
 }
-
+#head-list{
+    display: inline-block;
+    width: auto;
+    margin-left: 10%;
+}
+#contact-nav{
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    top:10px;
+}
+#titulo-subhead{
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    right: 40%;
+    top: 5px;
+    user-select: none;
+    transform: translate(-50%,0);
+}
 /*Lista de elementos dentro del contenido de contacto (1)*/
 .list{
     display: inline-block;
     margin-top: 10px;
-    margin-left: 2.5%;
     padding: 0;
 }
 .list-item{
     display: inline-block;
     margin-right: 5px;
     color: #ffffff;
+}
+.list-item.options{
+    margin-right: 40px;
+    cursor: pointer;
+}
+.list-item.options:hover{
+    text-decoration: underline 2px;
+}
+
+/*Segundo cabezal*/
+#second-sub-head{
+    background-color: var(--principal-Color);
+    position: relative;
+    width: 100%;
+    height: 75px;
+}
+#logo-box{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10%;
+}
+#options-box{
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 0;
+}
+#login-options{
+    background-color: red;
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+    top:20px;
 }
