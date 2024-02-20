@@ -77,6 +77,10 @@
 .list-item.options:hover{
     text-decoration: underline 2px;
 }
+.list-item.optionsTwo{
+    margin-right: 30px;
+    cursor: pointer;
+}
 
 /*Segundo cabezal*/
 #second-sub-head{
@@ -96,9 +100,8 @@
     margin-right: 0;
 }
 #login-options{
-    background-color: red;
     display: inline-block;
     position: absolute;
     right: 100px;
-    top:20px;
+    top:12px;
 }
