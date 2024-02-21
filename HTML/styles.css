@@ -1,6 +1,9 @@
 /*Vriables de la paleta de color*/
 :root {
     --principal-Color: #3d7cb2;
+    --secondary-Color:#fbd46c;
+    --principal-font:'Mukta';
+    --secondary-font:'Bebas Neue';
 }
 
 * {
@@ -52,6 +55,25 @@
     margin-left: 20px;
     list-style: none;
 
+}
+/*Clase de boton*/
+.button{
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    min-width: 110px;
+    max-width: 130px;
+    height: 50px;
+    border: 1px solid black;
+    box-shadow: 3px 2px 0px 0px rgba(0, 0, 0, 0.167);
+    font-family: var(--secondary-font);
+    font-size: 18px;
+}
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.423);
+}
+.button:active{
+    background-color: var(--secondary-Color);
 }
 
 /*Cabezal principal*/
@@ -189,6 +211,29 @@
     height: 90%;
     background-color: lightblue;
     overflow: hidden;
+}
+#eslogan{
+    color: white;
+    min-width: 230px;
+    position: absolute;
+    font-size: 30px;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    top:80%;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%);
+}
+#button1{
+    left: 40%;
+    right: 60%;
+    top:88%;
+}
+#button2{
+    right: 48%;
+    left: 52%;
+    top: 88%;
 }
 
 @media only screen and (max-width: 600px) {
