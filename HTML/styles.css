@@ -201,14 +201,16 @@
 .btn-flotante {
     width: 50px;
     height: 50px;
-    border-radius: 50% outset #000;
+    border-radius: 50%;
+    border: none;
     position: fixed;
     bottom: 50px;
     right: 50px;
     transition: all 300ms ease 0ms;
     background-image: url("Imagenes-iconos/whatsapp.png");
-    background-repeat: none;
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
 
 .btn-flotante:hover {
