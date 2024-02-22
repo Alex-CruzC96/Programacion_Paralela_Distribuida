@@ -260,6 +260,22 @@
     transform: translate(-50%);
     top: 88%;
 }
+#botonDemo{
+    width: 28%;
+    font-size: 100%;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    text-transform: uppercase;
+    font-family: var(--secondary-Color);
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 0;
+    font-weight: bold;
+}
 
 @media only screen and (max-width: 600px) {
     .btn-flotante {
