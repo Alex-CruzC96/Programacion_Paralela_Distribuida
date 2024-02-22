@@ -58,12 +58,14 @@
 }
 /*Clase de boton*/
 .button{
-    position: absolute;
     z-index: 2;
+    display: inline-block;
+    margin-right: 2px;
     cursor: pointer;
     min-width: 110px;
     max-width: 130px;
     height: 50px;
+    margin-left: 10%;
     border: 1px solid black;
     box-shadow: 3px 2px 0px 0px rgba(0, 0, 0, 0.167);
     font-family: var(--secondary-font);
@@ -225,15 +227,15 @@
     margin-right: 50%;
     transform: translate(-50%);
 }
-#button1{
-    left: 40%;
-    right: 60%;
+#button-holder{
+    z-index: 1;
+    position: absolute;
+    min-width: 330px;
+    min-height: 60px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
     top:88%;
-}
-#button2{
-    right: 48%;
-    left: 52%;
-    top: 88%;
 }
 
 @media only screen and (max-width: 600px) {
