@@ -82,6 +82,11 @@
     background-color: white;
     min-height: 500px;
 }
+.icono{
+    max-width: 190px;
+    transform: rotate(15deg);
+}
+
 /*Cabezal principal*/
 #head {
     position: relative;
