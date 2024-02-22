@@ -77,7 +77,11 @@
 .button:active{
     background-color: var(--secondary-Color);
 }
-
+.cajas{
+    max-width: 100%;
+    background-color: white;
+    min-height: 500px;
+}
 /*Cabezal principal*/
 #head {
     position: relative;
