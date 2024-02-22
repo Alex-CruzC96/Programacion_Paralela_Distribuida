@@ -90,8 +90,11 @@
 }
 
 .icono {
-    max-width: 190px;
+    width: 32%;
     transform: rotate(15deg);
+    position: absolute;
+    top: 10%;
+    left: 10px;
 }
 
 /*Cabezal principal*/
