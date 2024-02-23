@@ -283,6 +283,9 @@
 .botonDemo:active {
     background-color: var(--secondary-Color);
 }
+#contenedorAzul{
+    background-color: var(--principal-Color);
+}
 
 @media only screen and (max-width: 600px) {
     .btn-flotante {
