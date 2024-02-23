@@ -261,23 +261,20 @@
     top: 88%;
 }
 .botonDemo{
-    width: 28%;
-    font-size: 100%;
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    right: 50%;
-    padding: 1%;
-    transform: translate(-50%);
+    width: 38%;
+    height: 3em;
     text-transform: uppercase;
     font-family: var(--secondary-Color);
+    font-size: large;
     background-color: white;
     color: black;
     border-color: black;
     border-radius: 0;
     border-width: 2px;
     font-weight: bold;
+    position: relative;
 }
+
 .botonDemo:hover{
     background-color: rgba(0, 0, 0, 0.137);
 }
