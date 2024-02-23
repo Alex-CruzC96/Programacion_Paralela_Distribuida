@@ -260,13 +260,14 @@
     transform: translate(-50%);
     top: 88%;
 }
-#botonDemo{
+.botonDemo{
     width: 28%;
     font-size: 100%;
     position: absolute;
     bottom: 20%;
     left: 50%;
     right: 50%;
+    padding: 1%;
     transform: translate(-50%);
     text-transform: uppercase;
     font-family: var(--secondary-Color);
@@ -274,7 +275,14 @@
     color: black;
     border-color: black;
     border-radius: 0;
+    border-width: 2px;
     font-weight: bold;
+}
+.botonDemo:hover{
+    background-color: rgba(0, 0, 0, 0.137);
+}
+.botonDemo:active{
+    background-color: var(--secondary-Color);
 }
 
 @media only screen and (max-width: 600px) {
