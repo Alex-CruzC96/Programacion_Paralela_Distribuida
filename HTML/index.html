@@ -186,18 +186,65 @@
         <div class="cajas">
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-sm mt-5" style="background-image: url(Imagenes-pruebas/imagen-demo2.jpg); background-repeat:no-repeat; background-size:65%; background-position: center; position: relative;">
+                    <div class="col-sm mt-5"
+                        style="background-image: url(Imagenes-pruebas/imagen-demo2.jpg); background-repeat:no-repeat; background-size:65%; background-position: center; position: relative;">
                         <div class="container p-5 mt-5" style="margin-top: 35% !important;">
                             <img class="icono" src="Imagenes-iconos/gif.gif.GIF">
                             <button class="botonDemo">¡Adquiere el tuyo!</button>
                         </div>
                     </div>
-                    <div class="col-sm mt-5" style="background-image: url(Imagenes-pruebas/imagen-demo1.jpg); background-repeat: no-repeat; background-size:65%; background-position: center; position: relative;">
+                    <div class="col-sm mt-5"
+                        style="background-image: url(Imagenes-pruebas/imagen-demo1.jpg); background-repeat: no-repeat; background-size:65%; background-position: center; position: relative;">
                         <div class="container mt-5 pt-5" style="margin-top: 35% !important;">
                             <button class="botonDemo">¡Adquiere el tuyo!</button>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        </div>
+        <div>
+            <style>
+                .carrusel {
+                    display: flex;
+                    overflow-x: auto;
+                    scroll-snap-type: x mandatory;
+                }
+
+                .foto {
+                    scroll-snap-align: start;
+                    flex-shrink: 0;
+                    width: 50%;
+                    margin-right: 10px;
+                    transition: transform 0.5s ease;
+                }
+
+                .carrusel::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .controles {
+                    text-align: center;
+                }
+
+                .boton {
+                    cursor: pointer;
+                    padding: 10px;
+                    margin: 5px;
+                    background-color: #333;
+                    color: white;
+                    border: none;
+                }
+            </style>
+            <div class="carrusel">
+                <img class="foto" src="Imagenes-pruebas/imagen-demo1.jpg" alt="Foto 1">
+                <img class="foto" src="Imagenes-pruebas/imagen-demo2.jpg" alt="Foto 2">
+                <img class="foto" src="Imagenes-pruebas/imagen-demo1.jpg" alt="Foto 3">
+                <!-- Añade más imágenes según sea necesario -->
+            </div>
+            <div class="controles">
+                <button class="boton" onclick="mover(-1)">atras</button>
+                <button class="boton" onclick="mover(1)">Adelante</button>
             </div>
         </div>
     </main>

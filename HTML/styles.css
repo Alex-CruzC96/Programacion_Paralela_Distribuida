@@ -260,7 +260,8 @@
     transform: translate(-50%);
     top: 88%;
 }
-.botonDemo{
+
+.botonDemo {
     width: 38%;
     height: 3em;
     text-transform: uppercase;
@@ -275,10 +276,11 @@
     position: relative;
 }
 
-.botonDemo:hover{
+.botonDemo:hover {
     background-color: rgba(0, 0, 0, 0.137);
 }
-.botonDemo:active{
+
+.botonDemo:active {
     background-color: var(--secondary-Color);
 }
 
