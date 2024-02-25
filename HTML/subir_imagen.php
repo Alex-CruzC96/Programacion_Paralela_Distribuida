@@ -1,5 +1,5 @@
 <?php
-$connection=new mysqli("localhost", "root", "10022004AlexCruz9669", "optilent");
+$connection=new mysqli("localhost", "root", "10022004AlexCruz9669", "imagenes");
 $carpeta = "Imagenes-pruebas/";
 $archivo = $carpeta.basename($_FILES["foto"]["name"] ?? '');
 $imageFileType=strtolower(pathinfo($archivo, PATHINFO_EXTENSION));
@@ -14,36 +14,22 @@ if(isset($_POST["submit"]) && isset($_FILES["foto"])){
     }
 }
 
-if(isset($_FILES["foto"]) && !move_uploaded_file($_FILES["foto"]["tmp_name"], $archivo)){
-    switch ($_FILES['foto']['error']) {
-        case UPLOAD_ERR_INI_SIZE:
-            $message = "El archivo cargado excede el tamaño máximo permitido.";
-            break;
-        case UPLOAD_ERR_FORM_SIZE:
-            $message = "El archivo cargado excede el tamaño máximo permitido por el formulario.";
-            break;
-        case UPLOAD_ERR_PARTIAL:
-            $message = "El archivo fue sólo parcialmente cargado.";
-            break;
-        case UPLOAD_ERR_NO_FILE:
-            $message = "No se cargó ningún archivo.";
-            break;
-        case UPLOAD_ERR_NO_TMP_DIR:
-            $message = "Falta la carpeta temporal.";
-            break;
-        case UPLOAD_ERR_CANT_WRITE:
-            $message = "Falló al escribir el archivo en el disco.";
-            break;
-        case UPLOAD_ERR_EXTENSION:
-            $message = "Una extensión de PHP detuvo la carga del archivo.";
-            break;
-
-        default:
-            $message = "Error desconocido.";
-            break;
-    }
-    echo $message;
+if(isset($_FILES["foto"]) && move_uploaded_file($_FILES["foto"]["tmp_name"], $archivo)){
+    echo "El archivo ".htmlspecialchars(basename($_FILES["foto"]["name"]))."Ha sido subido.";
+    $rutaFinal = $archivo; // Aquí se guarda la ruta final de la imagen
+}else{
+    echo "Error";
 }
+
+// Ahora puedes usar $rutaFinal para lo que necesites
+// Por ejemplo, podrías insertarlo en tu base de datos
+$sql= "INSERT INTO imagenes(Ruta_Imagen) VALUES('$rutaFinal')";
+if ($connection->query($sql) === TRUE) {
+    echo "Ruta de la imagen guardada con éxito!";
+} else {
+    echo "Error al guardar la ruta de la imagen: " . $connection->error;
+}
+
 header('Location: index.html');
 exit;
 
