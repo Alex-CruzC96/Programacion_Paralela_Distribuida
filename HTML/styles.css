@@ -1,54 +1,136 @@
 /*Vriables de la paleta de color*/
-:root{
-    --principal-Color:#3d7cb2;
+:root {
+    --principal-Color: #3d7cb2;
+    --secondary-Color: #fbd46c;
+    --principal-font: 'Mukta';
+    --secondary-font: 'Bebas Neue';
+    --third-font: 'Caveat';
 }
 
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
 
 /*Clases*/
-.parrafo{
+.parrafo {
     color: white;
     font-family: 'Mukta';
     font-size: small;
 }
-.parrafo.lista{
+
+.parrafo.lista {
     text-transform: uppercase;
     font-family: 'Mukta';
     font-weight: bold;
     font-size: 15px;
 }
 
+.enlaces {
+    text-decoration: none;
+}
+
+.videos {
+    display: block;
+    width: 100%;
+}
+
+/*Cajas ocultas dentro del menú*/
+.hiden-box {
+    background-color: var(--principal-Color);
+    position: absolute;
+    width: 150px;
+    height: 0;
+    border-radius: 4%;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.hiden-box.active {
+    height: 140px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.list.hiden-class {
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+    list-style: none;
+
+}
+
+/*Clase de boton*/
+.button {
+    z-index: 2;
+    display: inline-block;
+    margin-right: 2px;
+    cursor: pointer;
+    min-width: 110px;
+    max-width: 130px;
+    height: 50px;
+    margin-left: 10%;
+    border: 1px solid black;
+    box-shadow: 3px 2px 0px 0px rgba(0, 0, 0, 0.167);
+    font-family: var(--secondary-font);
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.423);
+}
+
+.button:active {
+    background-color: var(--secondary-Color);
+}
+
+.cajas {
+    max-width: 100%;
+    background-color: white;
+    min-height: 500px;
+}
+
+.icono {
+    width: 32%;
+    transform: rotate(15deg);
+    position: absolute;
+    top: 10%;
+    left: 10px;
+}
+
 /*Cabezal principal*/
-#head{
+#head {
     position: relative;
-    width: 100%; /*No se debe mover*/
-    height:120px;
+    width: 100%;
+    display: block;
+    /*No se debe mover*/
+    height: 120px;
+    margin-bottom: 0;
 }
 
 /*Contenido de contacto*/
-#sub-head{
+#sub-head {
     display: block;
     position: relative;
     width: 100%;
-    height: 40px;
+    height: 45px;
     background-color: black;
 }
-#head-list{
+
+#head-list {
     display: inline-block;
     width: auto;
     margin-left: 10%;
 }
-#contact-nav{
+
+#contact-nav {
     display: inline-block;
     position: absolute;
     right: 10%;
-    top:10px;
+    top: 10px;
 }
-#titulo-subhead{
+
+#titulo-subhead {
     text-align: center;
     display: inline-block;
     width: 30%;
@@ -57,51 +139,160 @@
     right: 40%;
     top: 5px;
     user-select: none;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
+
 /*Lista de elementos dentro del contenido de contacto (1)*/
-.list{
+.list {
     display: inline-block;
     margin-top: 10px;
     padding: 0;
 }
-.list-item{
+
+.list-item {
     display: inline-block;
     margin-right: 5px;
     color: #ffffff;
 }
-.list-item.options{
+
+.list-item.options {
     margin-right: 40px;
     cursor: pointer;
 }
-.list-item.options:hover{
+
+.list-item.options:hover {
     text-decoration: underline 2px;
 }
-.list-item.optionsTwo{
+
+.list-item.optionsTwo {
     margin-right: 30px;
     cursor: pointer;
 }
 
+/*Eventos de hover*/
+
 /*Segundo cabezal*/
-#second-sub-head{
+#second-sub-head {
     background-color: var(--principal-Color);
     position: relative;
     width: 100%;
     height: 75px;
 }
-#logo-box{
+
+#logo-box {
     display: inline-block;
     margin-top: 15px;
     margin-left: 10%;
 }
-#options-box{
+
+#options-box {
     display: inline-block;
     margin-left: 10%;
     margin-right: 0;
 }
-#login-options{
+
+#login-options {
     display: inline-block;
     position: absolute;
     right: 100px;
-    top:12px;
+    top: 12px;
+}
+
+/*botton flotante*/
+.btn-flotante {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    transition: all 300ms ease 0ms;
+    background-image: url("Imagenes-iconos/whatsapp.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.btn-flotante:hover {
+    background-color: rgb(0, 173, 9);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.329);
+    transform: translateY(7px);
+}
+
+
+/*Main cuerpo*/
+#cuerpo {
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+#upper-body {
+    display: block;
+    width: 100%;
+    height: 90%;
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+#eslogan {
+    color: white;
+    min-width: 230px;
+    position: absolute;
+    font-size: 30px;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    top: 80%;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%);
+}
+
+#button-holder {
+    z-index: 1;
+    position: absolute;
+    min-width: 330px;
+    min-height: 60px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 88%;
+}
+
+.botonDemo {
+    width: 38%;
+    height: 3em;
+    text-transform: uppercase;
+    font-family: var(--secondary-Color);
+    font-size: large;
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 0;
+    border-width: 2px;
+    font-weight: bold;
+    position: relative;
+}
+
+.botonDemo:hover {
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+.botonDemo:active {
+    background-color: var(--secondary-Color);
+}
+#contenedorAzul{
+    background-color: var(--principal-Color);
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-flotante {
+        font-size: 14px;
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 50px;
+    }
 }

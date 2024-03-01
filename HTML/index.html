@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Optilent</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-    <link rel="icon" type="image/x-icon" href="Imagenes-iconos/ojito.jpg"/>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="Imagenes-iconos/ojito.jpg" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.0-dist/css/bootstrap.min.css" <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=VT323&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header id="head">
         <div id="sub-head"> <!--Cabezal de contacto-->
             <nav id="head-list">
                 <ul class="list">
                     <li class="list-item">
-                        <a class="enlaces" href="https://www.facebook.com/p/Optica-Optilent-MR-100069791618134/" target="_blank">
-                            <img class="icon" src="Imagenes-iconos/facebook_logo.png" width="6px"/>
+                        <a class="enlaces" href="https://www.facebook.com/p/Optica-Optilent-MR-100069791618134/"
+                            target="_blank">
+                            <img class="icon" src="Imagenes-iconos/facebook_logo.png" width="6px" />
                         </a>
                     </li>
                     <li class="list-item">
                         <a class="enlaces" href="">
-                            <img class="icon" src="Imagenes-iconos/instagram_logo.png" width="11px"/>
+                            <img class="icon" src="Imagenes-iconos/instagram_logo.png" width="11px" />
                         </a>
                     </li>
                     <li class="list-item">
                         <a class="enlaces" href="">
-                            <img class="icon" src="Imagenes-iconos/X.png" height="20px" style="margin-bottom: -4px;"/>
+                            <img class="icon" src="Imagenes-iconos/X.png" height="20px" style="margin-bottom: -4px;" />
                         </a>
                     </li>
                 </ul>
@@ -43,23 +54,107 @@
         </div>
         <div id="second-sub-head"> <!--Opciones para seleccionar-->
             <div id="logo-box">
-                <h1 class="parrafo" style="font-size: 25px; text-transform: uppercase; color: white; font-weight: bolder;">Optilent</h1>
+                <h1 class="parrafo"
+                    style="font-size: 25px; text-transform: uppercase; color: white; font-weight: bolder;">Optilent</h1>
             </div>
 
-            <!--Lista de opciones para el usuario-->
+            <!--Lista de opciones para el usuario (categorias)-->
             <div id="options-box">
                 <ul class="list">
-                    <li class="list-item options">
+                    <li id="opcion1" class="list-item options">
                         <p class="parrafo lista">Lentes de sol</p>
+                        <!--Cada apartado contiene un contenedor oculto-->
+                        <div class="hiden-box" id="hiden-box-one">
+                            <!--Lista de elementos ocultos-->
+                            <ul class="list hiden-class">
+                                <li class="hiden-elements">
+                                    <a class="enlaces" href="https://www.benandfrank.com/" target="_blank">
+                                        <p class="parrafo lista hiden">Elemento 1</p>
+                                    </a>
+                                </li>
+                                <li class="hiden-elements">
+                                    <a class="enlaces"
+                                        href="https://www.ray-ban.com/mexico?_gl=1*qn2e37*_up*MQ..&gclid=CjwKCAiAuNGuBhAkEiwAGId4amzCBNUMvPVFl1utQxgcRFh45RTPPw531KF02GPdE3Y4Be_GYXgwExoCr_UQAvD_BwE&gclsrc=aw.ds"
+                                        target="_blank">
+                                        <p class="parrafo lista hiden">Elemento 2</p>
+                                    </a>
+                                </li>
+                                <li class="hiden-elements">
+                                    <a class="enlaces" href="#">
+                                        <p class="parrafo lista hiden">Elemento 3</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="list-item options">
+                    <li id="opcion2" class="list-item options">
                         <p class="parrafo lista">Lentes de vista</p>
+                        <div class="hiden-box" id="hiden-box-two">
+                            <ul class="list hiden-class">
+                                <li class="hiden-elements">
+                                    <a class="enlaces" href="#">
+                                        <p class="parrafo lista hiden">Elemento 1</p>
+                                    </a>
+                                </li>
+                                <li class="hiden-elements">
+                                    <a class="enlaces" href="#">
+                                        <p class="parrafo lista hiden">Elemento 2</p>
+                                    </a>
+                                </li>
+                                <li class="hiden-elements">
+                                    <a class="enlaces" href="#">
+                                        <p class="parrafo lista hiden">Elemento 3</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
                     </li>
-                    <li class="list-item options">
+                    <li id="opcion3" class="list-item options">
                         <p class="parrafo lista">Graduados</p>
+                        <div class="hiden-box" id="hiden-box-three">
+                            <ul class="list hiden-class">
+                                <li class="hiden-elements">
+                                    <a class="enlaces" href="#">
+                                        <p class="parrafo lista hiden">Elemento 1</p>
+                                    </a>
+                                </li>
+                                <li class="hiden-elements">
+                                    <a class="enlaces" href="#">
+                                        <p class="parrafo lista hiden">Elemento 2</p>
+                                    </a>
+                                </li>
+                                <li class="hiden-elements">
+                                    <a class="enlaces" href="#">
+                                        <p class="parrafo lista hiden">Elemento 3</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
                     </li>
-                    <li class="list-item options">
+                    <li id="opcion4" class="list-item options">
                         <p class="parrafo lista">Articulos de limpieza</p>
+                        <div class="hiden-box" id="hiden-box-four">
+                            <ul class="list hiden-class">
+                                <li class="hiden-elements">
+                                    <a class="enlaces" href="#">
+                                        <p class="parrafo lista hiden">Elemento 1</p>
+                                    </a>
+                                </li>
+                                <li class="hiden-elements">
+                                    <a class="enlaces" href="#">
+                                        <p class="parrafo lista hiden">Elemento 2</p>
+                                    </a>
+                                </li>
+                                <li class="hiden-elements">
+                                    <a class="enlaces" href="#">
+                                        <p class="parrafo lista hiden">Elemento 3</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -67,7 +162,7 @@
             <nav id="login-options">
                 <ul class="list">
                     <li class="list-item optionsTwo">
-                        <img class="icon" width="30px" style="filter: invert(100%);" src="Imagenes-iconos/lupa.png"/>
+                        <img class="icon" width="30px" style="filter: invert(100%);" src="Imagenes-iconos/lupa.png" />
                     </li>
                     <li class="list-item optionsTwo">
                         <img class="icon" width="26px" style="filter: invert(100%);" src="Imagenes-iconos/usuario.png">
@@ -80,6 +175,129 @@
         </div>
     </header>
 
+    <main id="cuerpo">
+        <section id="upper-body">
+            <h2 id="eslogan">Lorem ipsum dolor</h2>
+            <div id="button-holder">
+                <button class="button" id="button1">Lorem Ipsum</button>
+                <button class="button" id="button2">Lorem Ipsum</button>
+            </div>
+            <video class="videos" autoplay loop muted>
+                <source src="videos/RBVideo.mp4" type="video/mp4">
+            </video>
+        </section>
+        <div class="cajas">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm mt-5"
+                        style="background-image: url(Imagenes-pruebas/imagen-demo2.jpg); background-repeat:no-repeat; background-size:65%; background-position: center; position: relative;">
+                        <div class="container p-5 mt-5" style="margin-top: 35% !important;">
+                            <img class="icono" src="Imagenes-iconos/gif.gif.GIF">
+                            <button class="botonDemo">¡Adquiere el tuyo!</button>
+                        </div>
+                    </div>
+                    <div class="col-sm mt-5"
+                        style="background-image: url(Imagenes-pruebas/imagen-demo1.jpg); background-repeat: no-repeat; background-size:65%; background-position: center; position: relative;">
+                        <div class="container mt-5 pt-5" style="margin-top: 35% !important;">
+                            <button class="botonDemo">¡Adquiere el tuyo!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div>
+            <style>
+                .carrusel {
+                    display: flex;
+                    overflow-x: auto;
+                    scroll-snap-type: x mandatory;
+                }
+
+                .foto {
+                    scroll-snap-align: start;
+                    flex-shrink: 0;
+                    width: 50%;
+                    margin-right: 10px;
+                    transition: transform 0.5s ease;
+                }
+
+                .carrusel::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .controles {
+                    text-align: center;
+                }
+
+                .boton {
+                    cursor: pointer;
+                    padding: 10px;
+                    margin: 5px;
+                    background-color: #333;
+                    color: white;
+                    border: none;
+                }
+            </style>
+            <div class="carrusel">
+                <img class="foto" src="Imagenes-pruebas/imagen-demo1.jpg" alt="Foto 1">
+                <img class="foto" src="Imagenes-pruebas/imagen-demo2.jpg" alt="Foto 2">
+                <img class="foto" src="Imagenes-pruebas/imagen-demo1.jpg" alt="Foto 3">
+                <!-- Añade más imágenes según sea necesario -->
+            </div>
+            <div class="controles">
+                <button class="boton" onclick="mover(-1)">atras</button>
+                <button class="boton" onclick="mover(1)">Adelante</button>
+            </div>
+        </div>
+        <!--Parte de Alex-->
+        <div class="cajas mt-5 pt-5">
+            <div id="contenedorAzul" class="container-sm text-center mt-5">
+                <div class="row">
+                  <div class="col-sm-7">
+                        <nav style="width: 80%; margin-top: 10%; margin-bottom: 10%; ">
+                            <p class="parrafo" style="font-size: 60px; font-family: 'Caveat';">
+                                ¿Por qué comprar con nosotros?
+                            </p>
+                        </nav>
+                    </div>
+                    <div class="col-sm position-relative" style="overflow: hidden;">
+                          <img class="" src="Imagenes-pruebas/sujeto1.png" style="height: 105%; position: absolute; right: 50%; left: 50%; transform: translate(-50%);">
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center mt-5">
+                <div class="row">
+                    <div class="col mt-3 mb-3 border-end border-1">
+                        <div class="container mb-3">
+                            <img class="icon" src="Imagenes-iconos/github.svg" style="width: 4em;">
+                        </div>
+                        <p class="parrafo lista" style="color: black; font-weight: normal;">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="col mt-3 mb-3 border-end border-1 border-start">
+                        <div class="container mb-3">
+                            <img class="icon" src="Imagenes-iconos/code-solid.svg" style="width: 5em;">
+                        </div>
+                        <p class="parrafo lista" style="color: black; font-weight: normal;">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="col mt-3 mb-3 border-start">
+                        <div class="container mb-3">
+                            <img class="icon" src="Imagenes-iconos/wifi-solid.svg" style="width: 5em;">
+                        </div>
+                        <p class="parrafo lista" style="color: black; font-weight: normal;">Lorem ipsum dolor</p>
+                    </div>
+                </div>
+            </div>           
+        </div>
+        
+    </main>
+    <!--Fuera del contenido principal-->
+    <div>
+        <button type="button" class="btn-flotante"></button>
+    </div>
+    <script src="script.js"></script>
+    <script src="Bootstrap/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="Js/code.jquery.com_jquery-3.7.0.min.js"></script>
 </body>
 
 </html>
