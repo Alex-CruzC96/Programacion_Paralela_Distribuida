@@ -263,11 +263,11 @@
 }
 
 .botonDemo {
-    width: 38%;
+    width: 8em;
     height: 3em;
     text-transform: uppercase;
     font-family: var(--secondary-Color);
-    font-size: large;
+    font-size: 100%;
     background-color: white;
     color: black;
     border-color: black;
