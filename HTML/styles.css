@@ -49,7 +49,7 @@
 .hiden-box.active {
     height: 140px;
     transition: 0.5s;
-    z-index: 1;
+    z-index: 2;
 }
 
 .list.hiden-class {
@@ -62,7 +62,7 @@
 
 /*Clase de boton*/
 .button {
-    z-index: 2;
+    z-index: 5;
     display: inline-block;
     margin-right: 2px;
     cursor: pointer;
@@ -166,6 +166,7 @@
     position: relative;
     width: 100%;
     height: 75px;
+    z-index: 2;
 }
 
 #logo-box {
@@ -259,6 +260,7 @@
     border-width: 2px;
     font-weight: bold;
     position: relative;
+    z-index: 5 !important;
 }
 
 .botonDemo:hover {
