@@ -100,9 +100,7 @@
 
 /*Cabezal principal*/
 #head {
-    position: relative;
     width: 100%;
-    display: block;
     /*No se debe mover*/
     height: 120px;
     margin-bottom: 0;
@@ -110,10 +108,7 @@
 
 /*Contenido de contacto*/
 #sub-head {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 45px;
+    height: 65px;
     background-color: black;
 }
 
@@ -123,12 +118,7 @@
     margin-left: 10%;
 }
 
-#contact-nav {
-    display: inline-block;
-    position: absolute;
-    right: 10%;
-    top: 10px;
-}
+
 
 #titulo-subhead {
     text-align: center;
