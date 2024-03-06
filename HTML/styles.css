@@ -30,11 +30,6 @@
     text-decoration: none;
 }
 
-.videos {
-    display: block;
-    width: 100%;
-}
-
 /*Cajas ocultas dentro del menú*/
 .hiden-box {
     background-color: var(--principal-Color);
@@ -224,7 +219,7 @@
     width: 100%;
     height: 90%;
     background-color: lightblue;
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 #eslogan {
