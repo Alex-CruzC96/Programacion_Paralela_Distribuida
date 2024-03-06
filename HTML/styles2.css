@@ -1,0 +1,30 @@
+@media (max-width:1256px) {
+    #columna2-header{
+        width: 54%;
+    }
+    .list-item.options .parrafo.lista{
+        font-size: 0.95em;
+    }
+}
+@media (max-width:721px) {
+    #columna1-header{
+        width: 50%;
+    }
+    #columna2-header{
+        display: none;
+    }
+    #columna3-header{
+    }
+    .list-item.options .parrafo.lista{
+        font-size: 0.95em;
+    }
+    .list-item.optionsTwo:nth-child(1){
+        display: none;
+    }
+    .list-item.optionsTwo:nth-child(3){
+        display: none;
+    }
+    #login-options{
+        margin-left:50%;
+    }
+}
