@@ -36,6 +36,9 @@
     #login-options{
         margin-left:50%;
     }
+    #cuadrito{
+        display: inline-block;
+    }
 }
 @media (max-width:380px) {
     #sub-head{
