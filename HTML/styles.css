@@ -129,6 +129,95 @@
 }
 
 
+/* .popup {
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    width: 94%;
+    margin: 0 20px;
+    padding: 170px 30px 54px;
+    border-radius: 24px;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0 100px 100px rgb(0, 0, 0/10%);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -880px;
+    left: 50%;
+    translate: -50% 0;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background: #216ce7;
+}
+
+.card .logo {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    translate: -50% 0;
+    width: 64px;
+    height: 64px;
+} */
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+    /* Ajusta el ancho máximo según sea necesario */
+    padding: 20px;
+    border-radius: 24px;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* Se redujo el desenfoque de la sombra */
+}
+
+.popup-content {
+    position: relative;
+}
+
+.popup-content .logo {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+    /* Añade espacio entre el logotipo y el título */
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+    /* Añade espacio entre el título y el formulario */
+}
+
+.popup-content form {
+    margin-bottom: 20px;
+    /* Añade espacio entre el formulario y el footer */
+}
+
+.popup-content footer {
+    color: #666666;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666666;
+}
+
+.popup-content .close:hover {
+    color: #333333;
+}
+
 
 
 /*Cabezal principal*/

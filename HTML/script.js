@@ -46,11 +46,20 @@ function mover(direccion) {
     carrusel.scrollLeft = fotos[indice].offsetLeft;
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    if (!localStorage.getItem("popupShown")) {
-        openPopup();
-    }
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     if (!localStorage.getItem("popupShown")) {
+//         openPopup();
+//     }
+// });
+
+// function openPopup() {
+//     document.getElementById("popup").style.display = "block";
+// }
+
+// function closePopup() {
+//     document.getElementById("popup").style.display = "none";
+//     localStorage.setItem("popupShown", "true");
+// }
 
 function openPopup() {
     document.getElementById("popup").style.display = "block";
@@ -58,7 +67,7 @@ function openPopup() {
 
 function closePopup() {
     document.getElementById("popup").style.display = "none";
-    localStorage.setItem("popupShown", "true");
 }
+
 
 

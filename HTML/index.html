@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="styles2.css" type="text/css">
 </head>
 
-<body>
+<body onload="openPopup()">
     <header id="head" class="container-fluid p-0">
         <div class="container-fluid text-center" id="sub-head">
             <div class="row">
@@ -582,7 +582,15 @@
     <div id="popup" class="popup">
         <div class="popup-content">
             <span class="close" onclick="closePopup()">&times;</span>
-            <p>prueba de ventana </p>
+            <img class="logo" src="Imagenes-iconos/icono.png">
+            <h2>Welcome Back</h2>
+            <form class="form">
+                <input type="email" placeholder="Username" />
+                <button type="submit">Submit</button> <!-- Agregado un botón de envío -->
+            </form>
+            <footer>
+                Ingresa tu correo para recibir promociones
+            </footer>
         </div>
     </div>
     <div>
