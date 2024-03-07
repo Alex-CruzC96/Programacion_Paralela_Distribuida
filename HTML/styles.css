@@ -169,9 +169,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
-    width: 90%;
-    max-width: 400px;
-    /* Ajusta el ancho máximo según sea necesario */
+    width: auto;
+    height: auto;
+    /* max-width: 400px;
+    Ajusta el ancho máximo según sea necesario */
     padding: 20px;
     border-radius: 24px;
     background: #ffffff;
@@ -216,6 +217,17 @@
 
 .popup-content .close:hover {
     color: #333333;
+}
+
+.form>button {
+    border: 0;
+    color: #3d7cb2;
+    background: rgba(0, 0, 0, 0.137);
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+    cursor: pointer;
+
 }
 
 
