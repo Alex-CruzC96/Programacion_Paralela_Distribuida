@@ -1,0 +1,105 @@
+/*Variables de la paleta de color*/
+:root {
+    --principal-Color: #3d7cb2;
+    --secondary-Color: #fbd46c;
+    --principal-font: 'Mukta';
+    --secondary-font: 'Bebas Neue';
+    --third-font: 'Caveat';
+}
+
+
+@media (max-width:1256px) {
+    #columna2-header{
+        width: 54%;
+    }
+    .list-item.options .parrafo.lista{
+        font-size: 0.95em;
+    }
+}
+@media (max-width:1232px) {
+    .list-item.options .parrafo.lista{
+        font-size: 12px;
+    }
+    .list.hiden-class{
+        margin-left: 10px;
+    }
+
+}
+@media (max-width:1053px) {
+    .blur{
+        filter: blur(10px);
+    }
+    #columna1-header{
+        width: 50%;
+    }
+    #columna2-header{
+        background-color: var(--principal-Color);
+        position: absolute;
+        right: 0;
+        top: 74px;
+        height: 260px;
+        padding: 0;
+    }
+    #columna2-header .list{
+        margin: 0;
+        width: 100%;
+    }
+    #columna2-header .list-item{
+        display: block;
+        margin-right: 0;
+        font-size: large;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid lightgray;
+    }
+    .hiden-box{
+        width: 0;
+        height: 140px;
+        left: -150px;
+        top:-25px;
+        transition: none;
+    }
+    .hiden-box.active{
+        background-color: var(--secondary-Color);
+        position: absolute;
+        top:-25px;
+        width: 150px;
+        left: -150px;
+        transition: none;
+    }
+    .list.hiden-class{
+        margin-top:15px !important;
+    }
+    .hiden-box .hiden-elements{
+        
+    }
+    .list-item.options{
+        position: relative;
+    }
+    .list-item.options .parrafo.lista{
+        font-size: 0.95em;
+    }
+    .list-item.optionsTwo:nth-child(1){
+        display: none;
+    }
+    .list-item.optionsTwo:nth-child(3){
+        display: none;
+    }
+    #login-options{
+        margin-left:50%;
+    }
+    #cuadrito{
+        display: inline-block;
+    }
+}
+@media (max-width:380px) {
+    #sub-head{
+        padding: 0;
+    }
+    #sub-head .row .col:first-child{
+        display: none;
+    }
+    #sub-head .row .col:last-child{
+        display: none;
+    }
+}
