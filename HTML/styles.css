@@ -93,6 +93,8 @@
 }
 
 
+
+
 /*Cabezal principal*/
 #head {
     width: 100%;
@@ -267,32 +269,38 @@
 #contenedorAzul {
     background-color: var(--principal-Color);
 }
-#login-options{
+
+#login-options {
     margin-left: 20px !important;
 }
-.list-item.optionsTwo:nth-child(2){
+
+.list-item.optionsTwo:nth-child(2) {
     margin-right: 10px;
 }
+
 #cuadrito {
     display: none;
     width: 34px;
     height: 16px;
-    
+
 }
+
 .linea {
-   display: block;
-   width: 30px;
-   height: 4.5px;
-   margin-bottom: 2px;
-   border-radius: 3px;
-   margin-top: 2.75px;
-   background-color: white;
+    display: block;
+    width: 30px;
+    height: 4.5px;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    margin-top: 2.75px;
+    background-color: white;
 }
-#cuadrito:hover .linea{
+
+#cuadrito:hover .linea {
     background-color: pink;
     cursor: pointer;
 }
-#cuadrito:active .linea{
+
+#cuadrito:active .linea {
     background-color: yellow;
 }
 
