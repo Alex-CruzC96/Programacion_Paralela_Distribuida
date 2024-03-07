@@ -6,7 +6,16 @@
         font-size: 0.95em;
     }
 }
-@media (max-width:721px) {
+@media (max-width:1232px) {
+    .list-item.options .parrafo.lista{
+        font-size: 12px;
+    }
+    .list.hiden-class{
+        margin-left: 10px;
+    }
+
+}
+@media (max-width:1053px) {
     #columna1-header{
         width: 50%;
     }
@@ -26,5 +35,19 @@
     }
     #login-options{
         margin-left:50%;
+    }
+    #cuadrito{
+        display: inline-block;
+    }
+}
+@media (max-width:380px) {
+    #sub-head{
+        padding: 0;
+    }
+    #sub-head .row .col:first-child{
+        display: none;
+    }
+    #sub-head .row .col:last-child{
+        display: none;
     }
 }
