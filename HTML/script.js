@@ -45,3 +45,12 @@ function mover(direccion) {
     const carrusel = document.querySelector('.carrusel');
     carrusel.scrollLeft = fotos[indice].offsetLeft;
 }
+
+function openPopup() {
+    document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
