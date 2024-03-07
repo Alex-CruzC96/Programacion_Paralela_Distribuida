@@ -92,6 +92,7 @@
     left: 10px;
 }
 
+
 /*Cabezal principal*/
 #head {
     width: 100%;
@@ -216,7 +217,7 @@
     width: 100%;
     height: 90%;
     background-color: lightblue;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 #eslogan {
@@ -262,7 +263,8 @@
 .botonDemo:active {
     background-color: var(--secondary-Color);
 }
-#contenedorAzul{
+
+#contenedorAzul {
     background-color: var(--principal-Color);
 }
 
