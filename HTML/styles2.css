@@ -57,30 +57,30 @@
         display: block;
         margin-right: 0;
         font-size: large;
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin-top: 12px;
+        margin-bottom: 14px;
         border-bottom: 2px solid lightgray;
+    }
+    #columna2-header .list-item:last-child{
+        border-bottom: none;
     }
     .hiden-box{
         width: 0;
         height: 140px;
         left: -150px;
-        top:-25px;
+        top:-18px;
         transition: none;
     }
     .hiden-box.active{
         background-color: var(--secondary-Color);
         position: absolute;
-        top:-25px;
+        top:-18px;
         width: 150px;
         left: -150px;
         transition: none;
     }
     .list.hiden-class{
         margin-top:15px !important;
-    }
-    .hiden-box .hiden-elements{
-        
     }
     .list-item.options{
         position: relative;
