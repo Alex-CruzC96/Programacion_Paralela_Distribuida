@@ -61,8 +61,11 @@ function mover(direccion) {
 //     localStorage.setItem("popupShown", "true");
 // }
 
+
+let cuerpo = document.getElementById("cuerpo");
 function openPopup() {
     document.getElementById("popup").style.display = "block";
+    cuerpo.classList.add("popup");
 }
 
 function closePopup() {
