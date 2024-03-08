@@ -12,3 +12,9 @@
     font-weight: lighter;
     font-size: 70%;
 }
+.nombresLentes{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: medium;
+}
