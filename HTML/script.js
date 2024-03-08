@@ -3,7 +3,7 @@
 //menu de categorias principal opcion 1
 let varOne = document.getElementById("opcion1");
 let hidenOne = document.getElementById("hiden-box-one");
-let cuerpo=document.getElementById("cuerpo");
+let cuerpo = document.getElementById("cuerpo");
 
 varOne.addEventListener('mouseover', function () {
     hidenOne.classList.add("active");
@@ -63,15 +63,16 @@ varFour.addEventListener('mouseleave', function () {
 // }
 
 
-let cuerpo = document.getElementById("cuerpo");
+let blur = document.getElementById("blur");
+
 function openPopup() {
     document.getElementById("popup").style.display = "block";
-    cuerpo.classList.add("popup");
+    blur.classList.add("popup");
 }
 
 function closePopup() {
     document.getElementById("popup").style.display = "none";
+    blur.classList.remove("popup");
 }
-
 
 

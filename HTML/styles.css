@@ -128,6 +128,17 @@
     cursor: pointer;
 }
 
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    /* Ajusta el nivel de desenfoque según sea necesario */
+    z-index: 998;
+    /* Asegúrate de que esté detrás del popup */
+}
 
 /* .popup {
     overflow: hidden;
