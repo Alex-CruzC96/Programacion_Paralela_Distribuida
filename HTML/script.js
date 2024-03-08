@@ -63,14 +63,14 @@ varFour.addEventListener('mouseleave', function () {
 // }
 
 
-// let cuerpo; {
+// let popup; {
 
 //     cuerpo = document.getElementById("cuerpo");
 // }
 
 function openPopup() {
     document.getElementById("popup").style.display = "block";
-    cuerpo.classList.add("popup");
+    // cuerpo.classList.add("popup");
 }
 
 function closePopup() {
