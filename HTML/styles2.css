@@ -34,9 +34,10 @@
     }
     /*Columna de opciones emergentes en versiones mobiles*/
     #columna2-header{ 
+        display: none;
         background-color: var(--principal-Color);
         position: absolute;
-        right: -250px;
+        right: 0px;
         top: 74px;
         height: 260px;
         width: 0px;
@@ -44,7 +45,7 @@
     }
     #columna2-header.active{
         width: 54%;
-        right: 0px;
+        display: block;
     }
     /*Estoy aqui*/
     #columna2-header .list{
