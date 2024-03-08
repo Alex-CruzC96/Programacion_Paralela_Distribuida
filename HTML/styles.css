@@ -15,13 +15,13 @@
 /*Clases*/
 .parrafo {
     color: white;
-    font-family: 'Mukta';
+    font-family: 'Mukta',Arial, Helvetica, sans-serif;
     font-size: small;
 }
 
 .parrafo.lista {
     text-transform: uppercase;
-    font-family: 'Mukta';
+    font-family: 'Mukta',Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 15px;
 }
@@ -66,8 +66,9 @@
     height: 50px;
     border: 1px solid black;
     box-shadow: 3px 2px 0px 0px rgba(0, 0, 0, 0.167);
-    font-family: var(--secondary-font);
+    font-family: var(--secondary-font), Arial, sans-serif;
     font-size: 18px;
+    color: black;
 }
 
 .button:hover {
@@ -394,7 +395,7 @@
     color: white;
     min-width: 230px;
     font-size: 30px;
-    font-family: var(--secondary-font);
+    font-family: var(--secondary-font),'Courier New', Courier, monospace;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -414,7 +415,7 @@
     width: 8em;
     height: 3em;
     text-transform: uppercase;
-    font-family: var(--secondary-Color);
+    font-family: var(--secondary-Color),Arial, Helvetica, sans-serif;
     font-size: 100%;
     background-color: white;
     color: black;
