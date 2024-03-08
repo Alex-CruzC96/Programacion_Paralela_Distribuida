@@ -32,18 +32,26 @@
     #columna1-header{
         width: 50%;
     }
-    #columna2-header{
+    /*Columna de opciones emergentes en versiones mobiles*/
+    #columna2-header{ 
         background-color: var(--principal-Color);
         position: absolute;
-        right: 0;
+        right: -250px;
         top: 74px;
         height: 260px;
+        width: 0px;
         padding: 0;
     }
+    #columna2-header.active{
+        width: 54%;
+        right: 0px;
+    }
+    /*Estoy aqui*/
     #columna2-header .list{
         margin: 0;
         width: 100%;
     }
+    
     #columna2-header .list-item{
         display: block;
         margin-right: 0;
