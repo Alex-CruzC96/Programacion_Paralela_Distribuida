@@ -180,7 +180,7 @@
     /* Se redujo el desenfoque de la sombra */
 }
 
-.background {
+/* .background {
     position: relative;
     top: -50vmin;
     left: -50vmin;
@@ -188,6 +188,9 @@
     height: 100vmin;
     border-radius: 47% 53% 61% 39%/45% 51% 49% 55%;
     background: #01a6ff;
+} */
+.popup {
+    filter: blur(20px);
 }
 
 .popup-content {
