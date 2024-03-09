@@ -72,6 +72,7 @@ cuerpo.addEventListener('click',function(){
     }
 });
 
+
 // document.addEventListener("DOMContentLoaded", function () {
 //     if (!localStorage.getItem("popupShown")) {
 //         openPopup();

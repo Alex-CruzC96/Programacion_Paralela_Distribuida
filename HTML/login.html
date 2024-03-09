@@ -40,7 +40,8 @@
                                 <img width="24" height="24" src="https://img.icons8.com/ios-filled/50/lock-2.png" alt="lock-2" style="filter: invert(100%);"/>
                             </div>
                             <div class="col ps-2 text-start position-relative">
-                                <input type="password" placeholder="Contraseña" class="input">
+                                <input type="password" placeholder="Contraseña" class="input" id="password-text">
+                                <input type="text" id="revelar" class="input">
                                 <img id="ojito" width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/visible--v2.png" alt="visible" class="position-absolute end-20" style="filter: invert(100%); cursor: pointer;"/>
                             </div>
                         </div>
@@ -61,7 +62,39 @@
             </div>
         </div>
     </div>
-    
+    <script>
+        //programacion de revelar contraseña en login
+        let pass=document.getElementById("password-text");
+        let reveal=document.getElementById("revelar")
+        let eye=document.getElementById("ojito");
+        var  control=false;
+
+        //evento del ojo revelador
+        eye.addEventListener('click',function(){
+            //evalua si esta activo o no
+            if(!control){
+                //iguala los valores en ambas entradas y agrega clases
+                reveal.value=pass.value;
+                pass.classList.add('oculto');
+                reveal.classList.add('revelado');
+                control=!control;
+            }
+            else{
+                //igualamos valores por si se cambia algo estando activo
+                pass.value=reveal.value;
+                pass.classList.remove('oculto');
+                reveal.classList.remove('revelado');
+                control=!control;
+            }
+        });
+        //evento que evita el pegado en password
+        pass.addEventListener('paste',function(event){
+            event.preventDefault();
+        });
+        reveal.addEventListener('paste',function(event){
+            event.preventDefault();
+        });
+    </script>    
     <script src="Bootstrap/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
     <script src="Js/code.jquery.com_jquery-3.7.0.min.js"></script>
     <script src="Js/cdn.jsdelivr.net_npm_@popperjs_core@2.11.8_dist_umd_popper.min.js"></script>
