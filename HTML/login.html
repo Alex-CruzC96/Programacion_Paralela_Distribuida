@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="utf-8">
+    <title>Iniciar sesion | Optilent</title>
+    <link rel="stylesheet" type="text/css" href="loginStyles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="Imagenes-iconos/icono.png">
+    <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="d-flex align-items-center justify-content-center p-5" id="principal-container">
+        <div class="container text-center" id="secondary-container">
+            <div class="row mb-2">
+                <div class="col position-relative">
+                    <img title="Regresar" class="position-absolute start-0 ms-3 mt-2" width="25" height="25" src="https://img.icons8.com/ios-filled/50/long-arrow-left.png" alt="retornar" style="filter: invert(100%);"/>
+                    <img src="Imagenes-iconos/usuario2.png" style="filter: saturate(0%) contrast(100%) brightness(0%) invert(100%);">
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <form action="" method="post">
+                        <div class="row mb-4">
+                            <div class="col-2 p-0 text-end">
+                                <img width="20" height="20" src="https://img.icons8.com/android/24/filled-message.png" alt="filled-message" style="filter: invert(100%);"/>
+                            </div>
+                            <div class="col ps-2 text-start">
+                                <input class="input" type="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-2 p-0 text-end">
+                                <img width="24" height="24" src="https://img.icons8.com/ios-filled/50/lock-2.png" alt="lock-2" style="filter: invert(100%);"/>
+                            </div>
+                            <div class="col ps-2 text-start position-relative">
+                                <input type="password" placeholder="Contraseña" class="input">
+                                <img id="ojito" width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/visible--v2.png" alt="visible" class="position-absolute end-20" style="filter: invert(100%); cursor: pointer;"/>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col">
+                                <a href="#" class="enlaces">
+                                    <p class="texto">¿Olvidó su contraseña?</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col">
+                                <button value="Enviar" type="submit" class="button" name="boton">INICIAR SESIÓN</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="Bootstrap/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="Js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="Js/cdn.jsdelivr.net_npm_@popperjs_core@2.11.8_dist_umd_popper.min.js"></script>
+</body>
+
+</html>
