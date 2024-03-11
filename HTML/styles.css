@@ -157,13 +157,13 @@
 .popup-content .logo {
     width: 64px;
     height: 54px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     /* Añade espacio entre el logotipo y el título */
 }
 
 .popup-content h2 {
     margin-bottom: 20px;
-    /* Añade espacio entre el título y el formulario */
+    display: flex;
 }
 
 .popup-content form {
@@ -189,14 +189,15 @@
 }
 
 .form {
-    margin: 0 0 44px;
+    margin: 0 0 30px;
     display: grid;
-    gap: 12px;
+    gap: 10px;
 }
 
 .form:is(input, button) {
     width: 100%;
-    height: 56px;
+    height: 50px;
+    padding: 2px;
     border-radius: 28px;
     font-size: 16px;
     font-family: inherit;
@@ -204,7 +205,7 @@
 
 .form>input {
     border: 0;
-    padding: 0 24px;
+    padding: 0 10px;
     color: #222222;
     background: #ededed;
 }
@@ -213,7 +214,7 @@
     border: 0;
     color: #3d7cb2;
     background: rgba(0, 0, 0, 0.137);
-    display: grid;
+    display: flex;
     place-items: center;
     font-weight: 500;
     cursor: pointer;
