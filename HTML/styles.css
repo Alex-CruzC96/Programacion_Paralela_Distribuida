@@ -94,16 +94,26 @@
 
 /* ventana */
 
-.blur-background {
+/* .blur-background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     backdrop-filter: blur(8px);
-    /* Ajusta el nivel de desenfoque según sea necesario */
-    z-index: 998;
-    /* Asegúrate de que esté detrás del popup */
+    z-index: 998;} */
+
+.popupBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .popup {
@@ -112,7 +122,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
-    /* Asegúrate de que esté sobre el desenfoque */
     width: auto;
     height: auto;
     max-width: 400px;
@@ -121,7 +130,6 @@
     background: #ffffff;
     text-align: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.827);
-    /* Se redujo el desenfoque de la sombra */
 }
 
 .popup-content {
@@ -130,6 +138,7 @@
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    position: relative;
 }
 
 .close {
@@ -148,44 +157,10 @@
     text-decoration: none;
 }
 
-
-
-.popup-content {
-    position: relative;
-}
-
-.popup-content .logo {
+.logo {
     width: 64px;
     height: 54px;
     margin-bottom: 10px;
-    /* Añade espacio entre el logotipo y el título */
-}
-
-.popup-content h2 {
-    margin-bottom: 20px;
-    display: flex;
-}
-
-.popup-content form {
-    margin-bottom: 20px;
-    /* Añade espacio entre el formulario y el footer */
-}
-
-.popup-content footer {
-    color: #666666;
-}
-
-.popup-content .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    color: #666666;
-}
-
-.popup-content .close:hover {
-    color: #333333;
 }
 
 .form {
@@ -194,7 +169,8 @@
     gap: 10px;
 }
 
-.form:is(input, button) {
+.form input[type="email"],
+.form button[type="submit"] {
     width: 100%;
     height: 50px;
     padding: 2px;
@@ -203,14 +179,14 @@
     font-family: inherit;
 }
 
-.form>input {
+.form input[type="email"] {
     border: 0;
     padding: 0 10px;
     color: #222222;
     background: #ededed;
 }
 
-.form>button {
+.form button[type="submit"] {
     border: 0;
     color: #3d7cb2;
     background: rgba(0, 0, 0, 0.137);
@@ -218,7 +194,10 @@
     place-items: center;
     font-weight: 500;
     cursor: pointer;
+}
 
+footer {
+    color: #666666;
 }
 
 

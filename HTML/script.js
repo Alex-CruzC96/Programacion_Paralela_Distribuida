@@ -68,14 +68,24 @@ varFour.addEventListener('mouseleave', function () {
 //     cuerpo = document.getElementById("cuerpo");
 // }
 
+// function openPopup() {
+//     document.getElementById("popup").style.display = "block";
+//     // cuerpo.classList.add("popup");
+// }
+
+// function closePopup() {
+//     document.getElementById("popup").style.display = "none";
+// }
+
+
 function openPopup() {
-    document.getElementById("popup").style.display = "block";
-    // cuerpo.classList.add("popup");
+    document.getElementById('openPopup').addEventListener('click', function () {
+        document.getElementById('popupBackground').style.display = 'flex';
+    });
 }
 
 function closePopup() {
-    document.getElementById("popup").style.display = "none";
+    document.getElementById('closePopup').addEventListener('click', function () {
+        document.getElementById('popupBackground').style.display = 'none';
+    });
 }
-
-
-
