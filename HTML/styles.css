@@ -432,6 +432,23 @@
 #cuadrito:active .linea {
     background-color: yellow;
 }
+.oculto{
+    display: none;
+}
+#barra-busqueda{
+    position: absolute;
+    top:-15px;
+    left: -130px;
+    background-color: rgba(255,255,255,0);
+    border: none;
+    border-bottom: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    max-width: 150px;
+}
+#barra-busqueda:focus{
+    outline: none;
+}
 
 @media only screen and (max-width: 600px) {
     .btn-flotante {

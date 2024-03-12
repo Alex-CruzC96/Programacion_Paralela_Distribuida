@@ -46,6 +46,17 @@ varFour.addEventListener('mouseleave', function () {
     
 });
 
+//programación de la barra de búsqueda
+let lupa=document.getElementById("lupita");
+let barra=document.getElementById("barra-busqueda");
+var controlBarra=false;
+//evento de click a la lupa
+lupa.addEventListener('click',function(){
+    lupa.classList.add('oculto');
+    barra.classList.remove('oculto');
+    controlBarra=!controlBarra;
+});
+
 //Programacion de cuadrito
 let cuadrito = document.getElementById("cuadrito");
 let options = document.getElementById("columna2-header");
@@ -70,7 +81,15 @@ cuerpo.addEventListener('click',function(){
         cuerpo.classList.remove("blur");
         control=!control;
     }
+    else if(controlBarra){
+        lupa.classList.remove('oculto');
+        barra.classList.add('oculto');
+        barra.value='';
+        controlBarra=!controlBarra;
+    }
 });
+
+
 
 
 // document.addEventListener("DOMContentLoaded", function () {
