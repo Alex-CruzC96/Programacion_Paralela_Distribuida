@@ -200,7 +200,7 @@
         </div>
     </header>
 
-    <main id="cuerpo">
+    <main>
         <section id="upper-body" class="container-fluid p-0 text-center position-relative">
             <div class="container text-center position-absolute bottom-0 start-50 translate-middle" style="z-index: 1;">
                 <div class="row mb-3">
@@ -462,27 +462,26 @@
 
     </main>
     <!--Fuera del contenido principal-->
-    <!-- <div class="background"></div> -->
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <img class="logo" src="Imagenes-iconos/icono.png">
-            <h2>Welcome Back</h2>
-            <form class="form">
-                <input type="email" placeholder="Username" />
-                <button type="submit">Submit</button> <!-- Agregado un botón de envío -->
-            </form>
-            <footer>
-                Ingresa tu correo para recibir promociones
-            </footer>
-        </div>
-    </div>
-    <div>
-        <button type="button" class="btn-flotante"></button>
-    </div>
     <script src="script.js"></script>
     <script src="Bootstrap/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
     <script src="Js/code.jquery.com_jquery-3.7.0.min.js"></script>
 </body>
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img class="logo" src="Imagenes-iconos/icono.png">
+        <h2>Welcome Back</h2>
+        <form class="form">
+            <input type="email" placeholder="correo electronico" />
+            <button type="submit">Registrarse</button> <!-- Agregado un botón de envío -->
+        </form>
+        <footer>
+            Ingresa tu correo para recibir promociones
+        </footer>
+    </div>
+</div>
+<div>
+    <button type="button" class="btn-flotante"></button>
+</div>
 
 </html>
