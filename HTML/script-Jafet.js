@@ -3,7 +3,7 @@
 //menu de categorias principal opcion 1
 let varOne = document.getElementById("opcion1");
 let hidenOne = document.getElementById("hiden-box-one");
-let cuerpo = document.getElementById("cuerpo");
+let cuerpo=document.getElementById("cuerpo");
 
 varOne.addEventListener('mouseover', function () {
     hidenOne.classList.add("active");
@@ -63,29 +63,15 @@ varFour.addEventListener('mouseleave', function () {
 // }
 
 
-// let popup; {
-
-//     cuerpo = document.getElementById("cuerpo");
-// }
-
-// function openPopup() {
-//     document.getElementById("popup").style.display = "block";
-//     // cuerpo.classList.add("popup");
-// }
-
-// function closePopup() {
-//     document.getElementById("popup").style.display = "none";
-// }
-
-
+let cuerpo = document.getElementById("cuerpo");
 function openPopup() {
-    document.getElementById('openPopup').addEventListener('click', function () {
-        document.getElementById('popupBackground').style.display = 'flex';
-    });
+    document.getElementById("popup").style.display = "block";
+    cuerpo.classList.add("popup");
 }
 
 function closePopup() {
-    document.getElementById('closePopup').addEventListener('click', function () {
-        document.getElementById('popupBackground').style.display = 'none';
-    });
+    document.getElementById("popup").style.display = "none";
 }
+
+
+
