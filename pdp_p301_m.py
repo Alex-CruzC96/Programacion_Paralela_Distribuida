@@ -1,7 +1,8 @@
-#
-#
-#
-#
+#heber jafet alvaro ramirez
+#17/03/24
+#programacion distribuida y en paralelo
+# hilos en python y impresion de cada hilo solicitado
+
 # To use threads you need import Thread using the following code:
 from threading import Thread
 #Also we use the sleep function to make the thread "sleep" 
